@@ -1,0 +1,425 @@
+.navbar-light .navbar-nav .nav-item .nav-link.active {
+  color: #E93B81;
+  font-weight: bold;
+}
+
+.active {
+  color: #E93B81;
+}
+
+#home {
+  background-image: linear-gradient(rgba(17, 36, 90, 0.8), rgba(17, 36, 90, 0.8)), url(./img/hero_img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  background-attachment: fixed;
+}
+#home h1 {
+  font-weight: 900;
+  width: 80%;
+  text-align: center;
+}
+#home p {
+  width: 40%;
+  text-align: center;
+  line-height: 25px;
+  padding: 10px 0;
+}
+#home .btn-color {
+  background-color: #E93B81;
+  font-size: 14px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 12px 28px;
+}
+#home .btn-color:hover {
+  background-color: rgb(210, 37, 106);
+}
+
+#services {
+  padding: 100px 0;
+}
+#services .section-intro {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 60px;
+}
+#services .section-intro h1 {
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #11245A;
+}
+#services .section-intro .hline {
+  width: 120px;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.1);
+  margin: 16px 0 auto 0;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+#services .icon-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 35px;
+  width: 60px;
+  height: 60px;
+  background-color: #E93B81;
+  border-radius: 4px;
+  color: white;
+}
+#services p {
+  line-height: 1.8;
+  color: #898fa1;
+  font-size: 15px;
+  font-family: "Lato", sans-serif;
+}
+#services h4 {
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #11245A;
+}
+
+.menu ul li {
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+
+#portfolio .portfolio-block {
+  position: relative;
+  overflow: hidden;
+}
+#portfolio .portfolio-block img {
+  width: 100%;
+  transition: 0.5s;
+}
+#portfolio .portfolio-block .bg {
+  background-color: rgba(17, 36, 90, 0.9);
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: flex-end;
+  position: absolute;
+  padding: 0 0 20px 20px;
+  opacity: 0;
+  transition: 0.5s;
+}
+#portfolio .portfolio-block .bg .item-text {
+  color: white;
+}
+#portfolio .portfolio-block:hover .bg {
+  opacity: 1;
+}
+#portfolio .portfolio-block:hover img {
+  transform: scale(1.1);
+}
+
+#features {
+  padding: 100px 0;
+}
+#features .section-intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#features .section-intro h3 {
+  text-transform: uppercase;
+  padding-bottom: 15px;
+  letter-spacing: 1px;
+  font-size: 35px;
+}
+#features .section-intro .hline {
+  width: 110px;
+  height: 2px;
+  background-color: rgba(137, 143, 161, 0.375);
+}
+#features .features {
+  display: flex;
+}
+#features .features .ft-icon {
+  margin-top: 10px;
+  background-color: #E93B81;
+  width: 50px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+#features h5 {
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #11245A;
+}
+#features p {
+  font-size: 14px;
+  color: #898fa1;
+  font-family: "Lato" sans-serif;
+}
+
+#team .team-member-img {
+  position: relative;
+  transition: 0.5s;
+  overflow: hidden;
+}
+#team .team-member-img img {
+  transition: 0.5s;
+  width: 100%;
+}
+#team .team-member-img .team-icons {
+  background-color: #E93B81;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  bottom: -61px;
+  transition: 0.5s;
+  opacity: 0;
+}
+#team .team-member-img .team-icons a {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 2px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5px;
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  transition: 0.5s;
+}
+#team .team-member-img .team-icons a:hover {
+  background-color: white;
+  color: #E93B81;
+}
+#team .team-member:hover .team-icons {
+  opacity: 1;
+  bottom: 0;
+}
+#team .team-member:hover .team-member-img img {
+  transform: translateY(-60px);
+}
+#team .team-text {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#team .team-text h3 {
+  font-size: 17px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1px;
+}
+#team .team-text .tm-title p {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: "Lato", sans-serif;
+}
+#team .team-text p {
+  width: 350px;
+  font-size: 13px;
+  text-align: center;
+}
+#team .hline {
+  width: 70px;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.445);
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+#team .team-member {
+  background-color: #11245A;
+  color: white;
+}
+#team .even {
+  background-color: #162e6e;
+}
+
+#testimonials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 100px 0;
+}
+#testimonials button {
+  background-color: transparent;
+}
+#testimonials img {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+}
+#testimonials .nav-pills .nav-link.active {
+  transform: scale(1.3);
+  background-color: transparent;
+  transition: 0.4s;
+}
+#testimonials .tst-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+#testimonials .tst-item p {
+  font-style: italic;
+  max-width: 720px;
+  margin: 24px auto;
+  color: #898fa1;
+  font-weight: 400;
+  font-size: 18.7px;
+}
+#testimonials .tst-item h5 {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 1px;
+  line-height: 1.5;
+}
+#testimonials .tst-item small {
+  color: #898fa1;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: "Lato", sans-serif;
+}
+#testimonials .tst-item .tst-icon {
+  font-size: 12px;
+  color: #E93B81;
+}
+
+#social {
+  padding: 100px 0;
+}
+#social img {
+  width: 100%;
+  height: 35px;
+}
+
+#cntct {
+  padding: 100px 0;
+}
+#cntct img {
+  width: 100%;
+}
+#cntct small {
+  font-size: 10px;
+  letter-spacing: 2px;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 3;
+  color: #898fa1;
+  font-family: "Lato", sans-serif;
+}
+#cntct input {
+  border: 1px solid rgba(0, 0, 0, 0.157);
+}
+#cntct input:focus {
+  box-shadow: none;
+  border: 1px solid #E93B81;
+}
+#cntct button {
+  padding: 10px 30px;
+  background-color: #E93B81;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 12px;
+  border-radius: 0;
+}
+#cntct textarea {
+  border: 1px solid rgba(0, 0, 0, 0.157);
+  resize: none;
+}
+#cntct textarea:focus {
+  box-shadow: none;
+  border: 1px solid #E93B81;
+}
+
+#gtstr {
+  background-color: #E93B81;
+  padding: 100px 0;
+}
+#gtstr a {
+  padding: 8px 20px;
+  background-color: white;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+  font-family: "Lato", sans-serif;
+}
+#gtstr h3 {
+  font-size: 25px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+footer .footer-top {
+  padding: 80px 30px;
+}
+footer .logo-text {
+  font-size: 22px;
+  text-transform: uppercase;
+  color: #11245A !important;
+}
+footer .title-sm {
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+footer p {
+  line-height: 1.8;
+  color: #898fa1;
+  font-size: 15px;
+  font-family: "Lato", sans-serif;
+}
+footer .footer-links a {
+  display: block;
+  text-decoration: none;
+  color: #898fa1;
+  transition: 0.3s;
+}
+footer .footer-links a:hover {
+  color: #E93B81;
+}
+footer .social-icons a {
+  color: #898fa1;
+  font-size: 20px;
+  margin: 0 1px 0 5px;
+  transition: 0.3s;
+}
+footer .social-icons a:hover {
+  color: #E93B81;
+}/*# sourceMappingURL=style.css.map */
